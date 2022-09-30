@@ -1,15 +1,120 @@
 # Site
 repository: sproogen/resume-theme
 favicon: images/favicon.ico
+
+# Content configuration version
 version: 2
 
 # Personal info
-name: Sergei Surovtsev
-title: Programmer
-email: ssurovsev@gmail.com
+name: Brett Harris
+title: Senior Network System Administrator
+email: brett.h@email.co.uk
+website: www.github.com/sproogen/resume-theme
+
+# Dark Mode (true/false/never)
+darkmode: false
 
 # Social links
-github_usertitle: stillonearth
+twitter_username: facespics
+github_username:  sproogen
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: jameswgrant
+linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+- title: itsgoingto.be
+  icon: fas fa-globe
+  url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+
+  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Super awesome project
+        link: github.com/sproogen
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: The Boring Company
+        link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Senior Network System Administrator
+        caption: November 2017 - Present
+        quote: >
+          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Harvard University
+        caption: 2010 - 2013
+        sub_title: BSc Computer Science
+        quote: >
+          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      - Rock climbing
+      - Gaming
+      - Knitting
+      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+      Look at this cool image  
+      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
 
 # Build settings
 remote_theme: sproogen/resume-theme
@@ -17,152 +122,6 @@ remote_theme: sproogen/resume-theme
 sass:
   sass_dir: _sass
   style: compressed
-  
 
-about_content: | # this will include new lines to allow paragraphs
-  Hey, I'm Sergey, a software developer from Moscow Russia. I've been on a startup journey, a corporate path and now diving into exciting worlds of AI, Reinforcement Learning, Robotics, Simulators and Game Engines. 
-
-content:
-  - title: Games 
-    layout: list
-    content:
-    - layout: top
-      title: Checkers with Bevy
-      link: https://github.com/stillonearth/CheckersOnBevy
-      caption: 2022, January
-    - layout: top
-      title: (Summer Game Jam 2022 Entry) Cult of Biboran
-      link: https://github.com/stillonearth/cult-of-biboran
-      caption: 2022, June
-    - layout: top
-      title: (DRAFT) Backgammon with Unreal Engine 5
-      link: https://github.com/stillonearth/UnrealBackgammon
-      caption: 2022, August
-  - title: Open-Source Libraries 
-    layout: list
-    content:
-    - layout: top
-      title: bevy_rl — Reinfocement Learning for Bevy
-      link: https://github.com/stillonearth/bevy_rl
-  - title: Research Projects and AI Recipes
-    layout: list
-    content:
-    - layout: top
-      title: (DRAFT) Meta-Trained Continuous Control System for Robotic Dog Unitree G1
-      link: https://github.com/stillonearth/continuous_control-unitree-g1
-      caption: 2022, June
-    - layout: top
-      title: Minimal FPS Game Gym Environment with Bevy and DQN Agent for Solving Environment
-      link: https://github.com/stillonearth/BevyStein
-      caption: 2022, February 
-    - layout: top
-      title: Checkers Game on Rust and Bevy, OpenAI Gym Environment and AI Agent based on Monte Carlo Tree Search (MCTS) with neural heuristics (AlphaZero) on Python and PyTorch
-      link: https://github.com/stillonearth/CheckersOnBevy
-      caption: 2022, January
-    - layout: top
-      title: Reimplementing Alpha-Zero for board game of Go
-      link: https://github.com/cwiz/guided_monte_carlo_tree-search/blob/master/Tree-Search.ipynb
-      caption: 2019, December
-    - layout: top
-      title: (DRAFT) Autonomous Robot with LEGO Mindstorm, NVIDIA Jetson Nano and ROS
-      link: https://github.com/cwiz/autonomous-lego-nvidia-jetson-robot
-      caption: 2019, November
-    - layout: top
-      title: Using Policy Optimization (PO) Algorithms for Solving Zero-Sum Games with Self-Play  
-      job_title: Udacity Deep Reinforcement Learning Nanodegree
-      link: https://github.com/cwiz/DRLND-Project-Collab-Compet/blob/master/WRITEUP.md
-      caption: 2019, September
-    - layout: top
-      title: Using Policy Optimization (PO) Algorithms Soft Actor-Critic (SAC) and Proximal Policy Optimization (PPO) for Solving Unity ML Reacher and Crawler Continous Control Environments  
-      job_title: Udacity Deep Reinforcement Learning Nanodegree
-      link: https://github.com/cwiz/DRLND-Project-Continuous_Control/blob/master/WRITEUP.md
-      caption: 2019, August
-    - layout: top
-      title: Using Deep-Q-Networks (DQN) for solving Unity ML Agents Banana Collector Discreet Control Environment and Evaluating DQN Improvements
-      job_title: Udacity Deep Reinforcement Learning Nanodegree
-      link: https://github.com/cwiz/DRLND-Project-Navigation/blob/master/WRITEUP.md
-      caption: 2019, July
-    - layout: top
-      title: Semantic Segmentation with Fully-Convolutional Neural Network for Identifying and Following a Human Target by a Quadcopter
-      job_title: Udacity Robotics Software Engineer Nanodegree
-      link: https://github.com/cwiz/RoboND-DeepLearning-Project
-      caption: 2019, May
-    - layout: top
-      title: 3D Perception with Point-Cloud Camera for Willow Garage PR2 Robot in Gazebo Virtual Environment and Robot Operation System (ROS)
-      job_title: Udacity Robotics Software Engineer Nanodegree
-      link: https://github.com/cwiz/RoboND-Perception-Project/blob/master/README.md
-      caption: 2019, March
-    - layout: top
-      title: Kinematics Pick & Place for KUKA KR210 Robotic Arm in Gazebo Virtual Environment and Robot Operation System (ROS)
-      job_title: Udacity Robotics Software Engineer Nanodegree
-      link: https://github.com/cwiz/RoboND-Kinematics-Project/blob/master/README.md
-      caption: 2019, March
-    - layout: top
-      title: Mars Rover Perception and Decision Making for Solving Search and Sample Return
-      job_title: Udacity Robotics Software Engineer Nanodegree
-      link: https://github.com/cwiz/RoboND-Rover-Project/blob/master/README.md
-      caption: 2018, December
-    - layout: top
-      title: Quadcopter State Estimation with Kalman Filtering in C++
-      job_title: Udacity Flying Car Nanodegree
-      link: https://github.com/cwiz/udacity-flying-car-cpp-estimation/blob/master/WRITEUP.md
-      caption: 2018, October
-    - layout: top
-      title: Quadcopter Motion Planning in Urban Environment
-      job_title: Udacity Flying Car Nanodegree
-      link: https://github.com/cwiz/udacity-flying-car-motion-planning/blob/master/WRITEUP.md
-      caption: 2018, September
-    - layout: top
-      title: PID Controls for Quadcopter in C++
-      job_title: Udacity Flying Car Nanodegree
-      link: https://github.com/cwiz/udacity-flying-car-cpp-controls/blob/master/WRITEUP.md
-      caption: 2018, September
-  - title: Education
-    layout: list
-    content:
-    - layout: left
-      title: Moscow Aviation Institute
-      caption: 2006 - 2013
-      sub_title: Engineer
-      description: >
-        The university laid emphasis on laboratory instruction in applied science and engineering, specific to demands of the aerospace industry.
-        During my years at MAI I have learned foundational skills related of computer modelling applied to aeronautics and space. My specialization was in Global Satellite Navigation Systems (GNSS) and final qualification project was about Indoor Navigation. Later this grew into company named Shopster.
-    - layout: left
-      title: Udacity
-      caption: 2018-2019
-      qualification: Software Engineer
-      description: >
-        Courses:
-
-        * Flying Car and Autonomous Flight Engineer
-        
-        * Robotics Software Engineer
-        
-        * Deep Reinforcement Learning
-        
-        * AI for Trading
-  - title: Experience
-    layout: list
-    content:
-      - layout: left
-        title: self-employed
-        sub_title: Programmer
-        caption: 2015 - now
-        description: >
-          Spinning up Computer Science in such fields of research as Neural Networks, Reinforcement Learning, Quantum Computing and Robotics.
-      - layout: left
-        title: Shopster
-        link: getshopster.com
-        sub_title: Programmer
-        caption: 2013 - 2015
-        description: >
-          Indoor Navigation and footfall Analytics with WiFi singal probing.
-          Shopster grew as a continuation of my University diploma. Idea was that people get lost in malls and solution was to use ambient wireless signals to build indoor mapping with particle filters. Ambient magnetic fields were added as another rich singal source later. Company eventualy pivoted into commercial foot traffic analytics and now is being used by malls and reatail stores.
-      - layout: left
-        title: Ostrovok.ru
-        link: ostrovok.ru
-        sub_title: Programmer
-        caption: 2011 - 2012
-        description: >
-          Ostrovok.ru is a Russian online hotel booking service, founded in 2010 by Serge Faguet and Kirill Makharinsky. It has over one million accommodation options. 
-          During my time at Ostrovok I've learned what proper tech company should be, how important company culture is and what Google-esqe values are. I've been mostly involved with programming web with python.
+plugins:
+ - jekyll-seo-tag
