@@ -31,9 +31,9 @@ github_username:  ctbip
 
 # Additional icon links
 additional_links:
-#- title: itsgoingto.be
-#  icon: fas fa-globe
-#  url: https://www.itsgoingto.be
+- title: itsgoingto.be
+  icon: fas fa-globe
+  url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -57,7 +57,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/IMG_8701.JPG
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Daniil. 
+  Hi, my name's Daniil. This is a blank page for now, but later my portfolio will be here.
 #  Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
 
 #  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
@@ -80,7 +80,7 @@ content:
         quote: >
           This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
